@@ -1,6 +1,7 @@
 import os
 
 TOKEN = os.getenv("TOKEN")
+print("ENV TOKEN =", TOKEN)
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -98,4 +99,5 @@ async def on_message(message):
 
 
 bot.run(TOKEN)
+
 
